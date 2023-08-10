@@ -7,61 +7,147 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600;1,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: Syne-VariableFont_wght;
+        src: url(assets/Syne-VariableFont_wght.ttf) format(ttf);
+      }
+      @font-face {
+        font-family: Gilroy;
+        src: url(assets/font/Gilroy/Gilroy-Regular.ttf);
+        
+      }
+      @font-face {
+        font-family: Gilroy-Black;
+        src: url(assets/font/Gilroy/Gilroy-Black.ttf);
+ 
+      }
+      @font-face {
+        font-family: Gilroy-Bold;
+        src: url(assets/font/Gilroy/Gilroy-Bold.ttf);
+      }
+    </style>
 
     <title>Document</title>
 </head>
 <body>
-     <header class="container" >
-            <div class="header_contact">
-                <span class="contact-info">
-                    <p>We are your reliable technology partner.</p>
-                    
-                </span>
-                <span class="social-media">
-                    <img src="./assets/images/phone-icon.png" alt="">
-                    <p>Have any questions? Call Now: +92 336 3869414</p>   
-                
-                </span>
-            
-            </div>
-        </header>
-        <hr/>
+    <header>
+      <div class="container">
+        <div class="header_contact">
+          <span class="contact-info">
+            <p>We are your reliable technology partner.</p>        
+          </span>
+          <span class="social-media">
+            <img src="./assets/images/phone-icon.png" alt="">
+            <p>Have any questions? Call Now: <b>+92 336 3869414</b></p>       
+          </span>      
+        </div>
+      </div>
+    </header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./Assets/images/logo.png" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./Assets/images/logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
               
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home </a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./about_us.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./current_provider.html">About Us</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./servies.html">Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./servies.html">Contact Us</a>
-                    </li>
-                  </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about_us.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./current_provider.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servies.html">Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servies.html">Contact Us</a>
+                  </li>
+              </ul>
                   <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form>
+            </div>
+          </nav>
+        </div>
+        <div class="homeBanner">
+          <div class="container">
+            <div class="row">
+              <div class="homeBanner_pt1 col-lg-6">
+                <h1>
+                  <div class="anmiation-wrapper animate-in-future clip-animate">WE 
+                    <div class="string">
+                      <div class="building one">CODE.</div>
+                      <div class="building two">Create.</div>
+                      <div class="building three">Innovation.</div>
+                    </div>
+                  </div>
+                </h1>
+                <p>Ignite your business's potential with our transformative software development solutions. Harnessing the latest technologies and industry expertise, we empower you to thrive in the digital era.</p>
+                <a class="btn btn-primary button-primary" href="#" role="button">Read More</a>
+              </div>
+              <div class="col-lg-6">
+                <div class="homeBanner_pt2">
+                  <img src="./assets/images/hero-section-object-1.svg" alt="" class="hero-section-object-1">
+                  <div class="hero-section-circle-green">
+                    <img src="./assets/images/hero-section-circle-green.svg" alt="">
+                  </div>
+                  <div class="hero-video-section">
+                    <video autoplay loop muted="muted">
+                      <source src="./assets/images/hero-section-video.m4v" >
+                    </video>
+                  </div>
+                  <div class="hero-section-circle-yellow">
+                    <img src="./assets/images/hero-section-circle-yellow.svg" alt="">
+                  </div>
+                  <img src="./assets/images/hero-section-object-2.svg" alt="" class="hero-section-object-2">
                 </div>
-              </nav>
-            
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-section">
+          <div class="container">
+            <div class="row">
+              <div class="services-section-heading">
+                <h1>our</h1>
+                <h1>services</h1>
+              </div>
+              <div class="text-center">
+                We Provide best solutions for
+              </div>
+              <div class="col-lg-6">
+                <div class="services-section-block">
+
+                  <img src="./assets/images/services-section-icon-1.svg" alt="">
+                  <div class="services-section-animation">
+                    <h1>Web Development</h1>
+                    <p>You need a website that represents your company well and grows your business. At TEALS, a web development services company, our full-stack website development consultants and web developers ...</p>
+                    <a class="btn btn-primary button-primary" href="#" role="button">Read More</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6">
+                <img src="./assets/images/services-section-icon-2.svg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
 </body>
 </html>
