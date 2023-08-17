@@ -292,7 +292,7 @@ p{
 .services-section-heading :nth-child(1){
     font-family: Gilroy-Black;
     font-size: 80px;
-    color: var(--button_color);
+    color: var(--heading-color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -301,7 +301,7 @@ p{
 .services-section-heading :nth-child(2){
     font-family: Gilroy-Black;
     font-size: 80px;
-    color: var(--primary-color);
+    color: var(--button_color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -383,6 +383,96 @@ p{
     flex-direction: column;
 }
 
+/* Procedure section */
+.procedure{
+    position: relative;
+    margin-bottom: 500px;
+}
+.procedure .lines{
+    width: 100%;
+    height: 20px;
+    background: var(--button_color);
+    border-radius: 10px;
+}
+.procedure #dot{
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px -1px 17px 0px #c1bdbd;
+    position: relative;
+    top: -50px;
+    left: 14%;
+}
+.procedure #dot img{
+    width: 80%;
+    position: absolute;
+    left: 7px;
+    bottom: 7px;
+}
+.procedure .col-lg-4{
+    margin-top: 51px;
+    padding: 0px 50px;
+    position: relative;
+}
+.procedure .arrow{
+    background: white;
+    /* position: absolute; */
+    left: 1%;
+}
+.procedure .arrow-sign{
+    rotate: 90deg;
+    width: 30%;
+    position: absolute;
+    top: -8%;
+    left: 35%;
+}
+.procedure .icon1{
+    width: 24%;
+    position: absolute;
+    left: 38%;
+    top: 19%;
+    z-index: 9999;
+}
+.procedure .box-procedure{
+    height: 340px !important;
+    border: 5px solid var(--button_color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 160px;
+  
+}
+.box-procedure h2{
+    font-family: Gilroy-Black;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 30px;
+    line-height: 48px;
+    padding-top: 100px;
+}
+.box-procedure p{
+    font-size: 22px;
+    font-family: 'Syne', sans-serif;
+    text-align: center;
+    color: var(--text-second-color);
+    padding: 15px 30px;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.procedure .arrow1{
+    display: none;
+}
+
+.procedure .arrow2{
+    display: none;
+}
+
+  
 
 
 @keyframes circle{
@@ -463,9 +553,7 @@ p{
     width: 75%;
 }
 
-   50% {
-    width: 55%;
-}
+
 
    100% {
     translate: 0px 0px;
@@ -476,6 +564,11 @@ p{
 
   @media only screen and (min-width: 1920px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1600px !important;
+        max-width: 1650px !important;
+    }
+  }
+  @media only screen and (min-width: 1650px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1550px !important;
     }
   }
