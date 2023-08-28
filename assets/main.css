@@ -244,9 +244,9 @@ p{
 .hero-section-object-1{
     width: 22%;
     position: absolute;
-    left: 40px;
+    left: 42px;
     top: 166px;
-    rotate: -1deg;
+    rotate: -2deg;
     
 }
 .hero-section-object-2{
@@ -259,7 +259,7 @@ p{
 }
 .hero-video-section{
     width: 78%;
-    height: 576px;
+    height: 559px;
     position: absolute;
     top: 104px;
     left: 80px;
@@ -325,6 +325,20 @@ p{
     height: 1px;
     background-color: var(--heading-color);
 }
+.services-section .row .shade-pic-right{
+    width: 40%;
+    position: absolute;
+    top: 930px;
+    right: 0px;
+    z-index: -9999;
+}
+.services-section .row :nth-child(12){
+    width: 60%;
+    position: absolute;
+    bottom: -2500px;
+    left: -302px;
+    z-index: -9999;
+}
 .services-section-block{
     margin: 50px 0px;
     padding: 0;
@@ -356,7 +370,7 @@ p{
     line-height: 35px;
 
 }
-.services-section-animation a{
+.services-section-animation :nth-child(3){
     margin-top: 20px;
     margin-bottom: 0;
     margin-left: 30px;
