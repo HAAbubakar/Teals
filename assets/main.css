@@ -306,6 +306,29 @@ p{
     text-decoration: none;
     text-align: center;
 }
+.lines-dot-left{
+    position: relative;
+    left: -3%;
+    bottom: -28px;
+}
+.lines-dot-right{
+    position: relative;
+    right: -3%;
+    top: -73px;
+    float: right;
+}
+.lines-dot-left-1{
+    position: relative;
+    left: -69%;
+    bottom: -81px;
+    float: left;
+}
+.lines-dot-right-1{
+    position: relative;
+    right: -33%;
+    top: 80px;
+    float: right;
+}
 
 .text-center {
     font-size: 26px;
@@ -332,7 +355,7 @@ p{
     right: 0px;
     z-index: -9999;
 }
-.services-section .row :nth-child(12){
+.services-section .row :nth-child(14){
     width: 60%;
     position: absolute;
     bottom: -2500px;
@@ -400,7 +423,7 @@ p{
 /* Procedure section */
 .procedure{
     position: relative;
-    margin-bottom: 500px;
+    margin-bottom: 130px;
 }
 .procedure .lines{
     width: 90%;
