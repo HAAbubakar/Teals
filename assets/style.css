@@ -1,7 +1,7 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 :root{
     --button_color: #CFB53B;
     --button_hover: #fff;
@@ -287,6 +287,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-backface-visibility: hidden;
+    transition: transform .7s ease,opacity .7s ease;
 
 }
 .services-section-heading :nth-child(1){
@@ -545,7 +547,11 @@ p{
     line-height: 26px;
 }
 
-  
+
+
+
+
+
 
 
 @keyframes circle{
