@@ -549,6 +549,91 @@ p{
 
 
 
+/* TECHNOLOGIES */
+.techsection{
+    background-color: var(--primary-color);
+}
+.techsection .services-section-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    transition: transform .7s ease,opacity .7s ease;
+
+}
+.techsection .services-section-heading :nth-child(1){
+    font-family: Gilroy-Black;
+    font-size: 80px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+.techsection .services-section-heading :nth-child(2){
+    font-family: Gilroy-Black;
+    font-size: 80px;
+    color: var(--button_color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+.techsection .lines-dot-left{
+    position: relative;
+    left: -3%;
+    bottom: -28px;
+}
+.techsection .lines-dot-right{
+    position: relative;
+    right: -3%;
+    top: -73px;
+    float: right;
+}
+.techsection .text-center::before, .techsection .text-center::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--text-color);
+}
+.techsection .text-center{
+    color: var(--text-color);
+}
+.techsection-sub-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techsection-sub-heading h3{
+    color: var(--text-color);
+    font-family: Gilroy-Black;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    border: 2px dashed var(--text-color);
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin-top: 20px ;
+    margin-bottom: 40px;
+}
+.techimages{
+    padding-bottom: 20px;
+}
+.techimages .col-lg-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.techimages img{
+    filter: brightness(1) invert(1);
+}
+.techimages img:hover{
+    filter: brightness(1) invert(0);
+}
+
+
+
+
 
 
 
