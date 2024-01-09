@@ -12,7 +12,7 @@
 }
 h3{
     font-family: Gilroy-Black;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: capitalize;
     color: var(--heading-color);
 }
@@ -21,14 +21,14 @@ h3 span{
 }
 p{
     font-family: syne;
-    font-size: 22px;
+    font-size: 18px !important;
     text-transform: none;
     color: var(--text-second-color);
 }
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 45px;
   text-transform: uppercase;
   color: var(--heading-color);
   font-family: 'Gotham';
@@ -39,6 +39,19 @@ h1 {
 h1 span{
   color: var(--button_color);
 }
+.btn:hover {
+  color: var(--button_color);
+  background-color: var(--button_hover) !important;
+  border: 1px  solid;
+  border-color: var(--primary-color) !important;
+}
+.form-control:focus{
+  border: none !important;
+  border-color: #ffffff !important ;
+}
+
+
+/* HEADER */
 header{
     background-color: var(--heading-color);
 }
@@ -80,8 +93,8 @@ p{
     margin-bottom: 0 !important;
 }
 .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
     margin-top: -18px;
+    align-items: baseline;
 }
 .navbar{
     padding: 0 !important;
@@ -91,7 +104,7 @@ p{
 }
 .nav-item{
     padding: 0px 10px;
-    padding-top: 45px;
+    /* padding-top: 45px; */
     margin-bottom: 0px;
 }
 .nav-item :active{
@@ -113,8 +126,10 @@ p{
     padding: 0px 10px;
     font-family: Gilroy;
     font-size: 22px;
+    padding-top: 41px;
+    padding-bottom: 10px;
 }
-.nav-item:hover{
+.nav-item:hover a{
     border-radius: 0px 0px 10px 10px;
     padding-bottom: 10px;
     background: var(--button_color);
@@ -124,12 +139,12 @@ p{
     padding-top: 41px;
 
 }
-.nav-item a:hover{
+/* .nav-item a:hover{
     color: var(--text-color) !important;
     font-family: Gilroy-Black;
     font-weight: 900;
 
-}
+} */
 .navbar-collapse button{
     margin: 0px 15px;
     border: none;
@@ -169,7 +184,9 @@ p{
 }
 .form-inline .form-control{
     border-radius: 20px !important;
+
 }
+
 
 /* home banner section or hero section */
 
@@ -245,6 +262,7 @@ p{
     font-family: 'Syne', sans-serif;
     font-size: 26px;
     color: var(--text-second-color);
+    padding-bottom: 20px;
 }
 .button-primary{
     width: 221px;
@@ -329,20 +347,21 @@ p{
 }
 .services-section-heading :nth-child(1){
     font-family: Gilroy-Black;
-    font-size: 80px;
+    font-size: 60px;
     color: var(--heading-color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
 }
 .services-section-heading :nth-child(2){
     font-family: Gilroy-Black;
-    font-size: 80px;
+    font-size: 60px;
     color: var(--button_color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    padding-top: 10px;
 }
 .lines-dot-left{
     position: relative;
@@ -403,15 +422,18 @@ p{
 .services-section-block{
     margin: 50px 0px;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 }
 .services-section-block img{
-    width: 100%;
+    width: 70%;
 }
-.services-section-animation{
+/* .services-section-animation{
     display: none;
-}
+} */
 .services-section-animation h1{
     font-family: Gilroy-Black;
     font-size: 40px;
@@ -441,18 +463,18 @@ p{
     box-shadow: -1px 3px 90px -28px #2424242e;;
 }
 
-.services-section-block:hover .services-section-animation{
+/* .services-section-block:hover .services-section-animation{
     display: unset;
     position: relative;
     top: -60px;
     
-}
-.services-section-block:hover img{
+} */
+/* .services-section-block:hover img{
     transform: translateX(-110px) translateY(-35px);
     width: 50%;
     animation: serivces 2s ease;
     
-}
+} */
 .services-section-animation:hover{
     display: flex;
     flex-direction: column;
@@ -480,7 +502,7 @@ p{
     box-shadow: 1px -1px 17px 0px #c1bdbd;
     position: relative;
     top: -34px;
-    left: 14.3%;
+    left: 14.4%;
 }
 .procedure #dot img:nth-child(1){
     width: 90px;
@@ -599,20 +621,21 @@ p{
 }
 .techsection .services-section-heading :nth-child(1){
     font-family: Gilroy-Black;
-    font-size: 80px;
+    font-size: 60px;
     color: var(--text-color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
 }
 .techsection .services-section-heading :nth-child(2){
     font-family: Gilroy-Black;
-    font-size: 80px;
+    font-size: 60px;
     color: var(--button_color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    padding-top: 10px;
 }
 .techsection .lines-dot-left{
     position: relative;
@@ -660,12 +683,12 @@ p{
     align-items: center;
     justify-content: center;
 }
-.techimages img{
+/* .techimages img{
     filter: brightness(1) invert(1);
 }
 .techimages img:hover{
     filter: brightness(1) invert(0);
-}
+} */
 
 
 
@@ -727,10 +750,15 @@ p{
     background-color: var(--button_color);
 }
 
+.formsection h1{
+  padding: 10px !important;
+}
+
 
 /* FOOTER */
 .footersection{
     background-color: var(--heading-color);
+    padding: 60px 0;
 }
 .footersection img{
     width: 100%;
@@ -808,7 +836,7 @@ p{
     right: 10px;
 }
 .footerimgright img{
-    left: 128px;
+    left: 132px;
     width: 130%;
     position: absolute;
     top: -97px;
@@ -821,6 +849,9 @@ p{
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+}
+.copyright p{
+  color: var(--text-color);
 }
 
 
@@ -1262,6 +1293,9 @@ p{
     align-items: center;
     justify-content: center;
 }
+.bannerimage img{
+  width: 100%;
+}
 /* paragrhap */
 .parasection{
     text-align: center;
@@ -1532,7 +1566,7 @@ textarea.form-control{
         transform: translatey(0);
       }
   }
-@keyframes serivces {
+/* @keyframes serivces {
    0% {
     translate: 100px 50px;
     width: 100%;
@@ -1544,7 +1578,7 @@ textarea.form-control{
     translate: 0px 0px;
     width: 50%;
 }
-  }
+  } */
 
 
   @media only screen and (min-width: 1920px){
@@ -1556,4 +1590,219 @@ textarea.form-control{
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1550px !important;
     }
+
+  }
+  @media only screen and (max-width: 1650px){
+
+    .footerimgright img{
+      left: 1px;
+    }
+    .leftball{
+      bottom: 90px;
+    }
+    .boxes{
+      height: 400px;
+    }
+  }
+  @media only screen and (max-width: 1440px){
+    .leftball{
+      right: 34px;
+      bottom: 100px;
+    }
+    .footerimgright img{
+      left: 23px;
+      top: -59px;
+    }
+    .hero-section-object-1{
+      left: 55px;
+    }
+    .hero-section-object-2{
+      top: 116px;
+      right: -32px;
+    }
+    .hero-video-section{
+      width: 82%;
+      height: 532px;
+    }
+    .form-button .file {
+      padding-left: 125px;
+    }
+    .jobPageBox .boxes{
+      height: 350px;
+    }
+
+  }
+  @media only screen and (max-width: 1280px){
+    .nav-item{
+      padding: 0 0px;
+      padding-top: 45px;
+    }
+    .scheduleSec .btn-secondary {
+      font-size: 16px;
+    }
+    .hero-video-section{
+      width: 95%;
+      left: 26px;
+    }
+    .hero-section-object-1{
+      left: 15px;
+    }
+    .hero-section-object-2 {
+      right: -51px;
+    }
+    .homeBanner::before{
+      width: 75% !important;
+    }
+    .footerimgright img{
+      left: 43px;
+    }
+    .services-section-heading :nth-child(2){
+      font-size: 60px;
+    }
+    .lines-dot-left-1{
+      left: -72%;
+    }
+    .lines-dot-right-1{
+      right: -31%;
+    }
+  }
+  @media only screen and (max-width: 1080px){
+    /* .services-section-block:hover img{
+      transform: translateX(-60px) translateY(-23px);
+    } */
+    .boxes {
+      height: 550px;
+    }
+    .nav-item a{
+      font-size: 20px;
+    }
+    .footerimgright img{
+      left: 42px;
+    }
+    .hero-video-section{
+      width: 112%;
+      left: 0;
+    }
+    .hero-section-object-1{
+      left: 5px;
+    }
+    .hero-section-object-2 {
+      right: -83px;
+    }
+    .services-section-heading :nth-child(1) {
+      font-size: 50px;
+    }
+    .services-section-heading :nth-child(2){
+      font-size: 50px;
+    }
+    .hero-video-section{
+      width: 100%;
+      height: 502px;
+      top: 165px;
+      border-radius: 912% 850% 896% 875%;
+
+    }
+    .hero-section-object-1 {
+      left: 26px;
+      rotate: 10deg;
+    }
+    .hero-section-object-2{
+      right: 8px;
+      rotate: -26deg;
+    }
+
+
+  }
+  @media only screen and (max-width: 991px){
+    .boxes{
+      margin-bottom: 70px;
+      height: 350px;
+    }
+    .scheduleSec .col-lg-3{
+      justify-content: center;
+      margin: 30px 0;
+    }
+    /* .services-section-block:hover img{
+      transform: translateX(-110px) translateY(-35px);
+    } */
+    header{
+      display: none;
+    }
+    .navbar-expand-lg .navbar-nav{
+      padding-bottom: 30px;
+    }
+    .nav-item{
+      width: 100%;
+    }
+    .nav-item:hover a{
+      border-radius: 0px 0px 0px 0px;
+      padding-bottom: 10px;
+      background: var(--button_color);
+      color: var(--text-color) !important;
+      font-family: Gilroy-Black;
+      font-weight: 900;
+      padding-top: 0;
+  
+    }
+    .jobPageBox .col-lg-3{
+      margin-bottom: 70px;
+    
+    }
+    .procedure{
+      display: none;
+    }
+    .procedure .lines{
+      left: 34px;
+    }
+    .footerimgright{
+      display: none;
+    }
+    .footersection .col-lg-3{
+      padding: 30px 0;
+    }
+    .footersection .col-lg-4{
+      padding: 30px 0;
+    }
+    .footersection .footersec2{
+      flex-direction: row;
+      align-items: center;
+    }
+    .footersec2 ul{
+      padding-left: 160px;
+    }
+    .procedure .arrow-sign{
+      width: 20%;
+      left: 40%;
+    }
+    .homeBanner_pt2{
+      display: none;
+    }
+    .homeBanner::before{
+      display: none;
+    }
+    .services-section{
+      margin-top: 150px;
+    }
+    .lines-dot-left-1{
+      left: -85%;
+      bottom: -68%;
+    }
+    .lines-dot-right-1{
+      top: 75px;
+      right: -27%;
+    }
+    .homeBanner .row .homeBanner_pt1{
+      padding-bottom: 50px;
+    }
+    
+  }
+  @media only screen and (max-width: 575px){
+    .footersection {
+      padding-left: 20px;
+
+    }
+    .footersection .col-lg-3 img{
+      width: 90%;
+    }
+    
   }

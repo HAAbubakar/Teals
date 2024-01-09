@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,6 +38,7 @@
     </style>
 
     <title>TEALS.Co</title>
+    
 </head>
 <body>
     <header>
@@ -52,40 +54,41 @@
         </div>
       </div>
     </header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./Assets/images/logo.png" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home </a>
+    <div class="navmenu">
+
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about_us.html">Services</a>
+                <a class="nav-link" href="servicepage.html">Services</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./current_provider.html">About Us</a>
+                <a class="nav-link" href="jobpage.html">Jobs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./servies.html">Jobs</a>
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./servies.html">Contact Us</a>
-              </li>
-          </ul>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
         </div>
       </nav>
-</div>
+    </div>
     <div class="homeBanner">
           <div class="container">
             <div class="row">
@@ -310,22 +313,22 @@
         </div>
         <div class="techimages">
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg1.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg2.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg3.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg4.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg5.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg6.svg" alt="" >
             </div>
           </div>
@@ -335,22 +338,22 @@
         </div>
         <div class="techimages">
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg8.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg9.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg10.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg11.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg12.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg13.svg" alt="" >
             </div>
           </div>
@@ -360,22 +363,22 @@
         </div>
         <div class="techimages">
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg15.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg16.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg17.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg18.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg19.svg" alt="" >
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               <img src="./assets/images/techimg20.svg" alt="" >
             </div>
           </div>
@@ -504,9 +507,7 @@
         slideEaseDuration: 10,
       });
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./assets/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
