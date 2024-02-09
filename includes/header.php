@@ -25,17 +25,17 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="servicepage.html">Services</a>
+                <a class="nav-link" href="servicepage/">Services</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="about/">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="jobpage.html">Jobs</a>
+                <a class="nav-link" href="jobpage/">Jobs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                <a class="nav-link" href="contact-us/">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">

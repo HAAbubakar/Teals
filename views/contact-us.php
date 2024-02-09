@@ -20,6 +20,15 @@
               <div class="mb-3">
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
+              <select class="form-select" aria-label="Default select example">
+  <option selected>department</option>
+  <option value="1">UI/UX Design</option>
+  <option value="2">Development</option>
+  <option value="3">SEO</option>
+  <option value="3">Sale Excutive</option>
+  <option value="3">Branding</option>
+  <option value="3">Web Design</option>
+</select>
               <div class="mb-3">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
