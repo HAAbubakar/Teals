@@ -24,13 +24,13 @@ h3 span{
 }
 p{
     font-family: syne;
-    font-size: 18px !important;
+    font-size: 18px ;
     text-transform: none;
     color: var(--text-second-color);
 }
 h1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 45px;
   text-transform: uppercase;
   color: var(--heading-color);
@@ -214,7 +214,7 @@ p{
     font-size: 60px;
     text-transform: uppercase;
     color: var(--heading-color);
-    font-family: 'Gotham';
+    font-family: Gilroy-Extrabold;
     line-height: 1.2;
     margin-top: 0px;
     
@@ -228,7 +228,9 @@ p{
 .anmiation-wrapper {
     height: 70px;
     overflow-y: hidden;
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
+    font-size: 70px;
+    font-weight: 900;
 }
 .string {
     display: inline-flex;
@@ -349,22 +351,25 @@ p{
 
 }
 .services-section-heading :nth-child(1){
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 60px;
     color: var(--heading-color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     padding-top: 10px;
+    font-weight: 900;
+    white-space: pre;
 }
 .services-section-heading :nth-child(2){
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 60px;
     color: var(--button_color);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     padding-top: 10px;
+    font-weight: 900;
 }
 .lines-dot-left{
     position: relative;
@@ -438,7 +443,7 @@ p{
     display: none;
 } */
 .services-section-animation h1{
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 40px;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -446,6 +451,7 @@ p{
     text-align: left;
     padding: 15px 30px;
     line-height: 48px;
+    
 }
 .services-section-animation p{
     font-size: 22px;
@@ -553,7 +559,7 @@ p{
   
 }
 .box-procedure h2{
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 40px;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -594,7 +600,7 @@ p{
     display: none;
 }
 .arrow2 .box-procedure h2{
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 40px;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -606,6 +612,26 @@ p{
 .procedure .arrow2 .box-procedure p{
     padding: 15px 17px;
     line-height: 26px;
+}
+.procedure .mobile-procedure{
+  display: none;
+}
+.procedure .mobile-procedure .col-lg-4{
+    padding: 5px;
+    margin-top: 0;
+    display: flex;
+}
+.mobile-procedure .col-lg-4 .box-procedure{
+    width: 100%;
+    border: 5px solid var(--button_color);
+    border-radius: 10px;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 0;
+    margin: 0%;
+}
+.mobile-procedure .col-lg-4 .box-procedure h2{
+  padding: 0;
 }
 
 
@@ -623,7 +649,7 @@ p{
 
 }
 .techsection .services-section-heading :nth-child(1){
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 60px;
     color: var(--text-color);
     text-transform: uppercase;
@@ -632,7 +658,7 @@ p{
     padding-top: 10px;
 }
 .techsection .services-section-heading :nth-child(2){
-    font-family: Gilroy;
+    font-family: Gilroy-Extrabold;
     font-size: 60px;
     color: var(--button_color);
     text-transform: uppercase;
@@ -725,6 +751,28 @@ p{
     font-family: Gilroy;
     font-size: 22px;
     border-radius: 50px;
+}
+.formsection p {
+  text-align: center;
+
+}
+.formsection .resume-para{
+  text-align: left;
+  padding-left: 5%;
+  color: var(--heading-color);
+  font-family: gilory;
+  font-size: 18px;
+  font-weight: 600;
+}
+.formsection .form-label{
+  padding-left: 5%;
+  color: var(--heading-color);
+  font-family: gilory;
+  font-size: 18px;
+  font-weight: 600;
+}
+.formsection form input::placeholder{
+  padding-left: 3%;
 }
 .form-button .btn-primary{
     margin-right: 20px;
@@ -1622,6 +1670,9 @@ textarea.form-control{
       right: 34px;
       bottom: 100px;
     }
+    .hero-video-section video{
+      width: 194%;
+    }
     .footerimgright img{
       left: 23px;
       top: -59px;
@@ -1642,6 +1693,12 @@ textarea.form-control{
     }
     .jobPageBox .boxes{
       height: 350px;
+    }
+    .procedure .arrow1 .icon1{
+      top: 108px;
+    }
+    .procedure .icon1{
+      top: 108px;
     }
 
   }
@@ -1683,6 +1740,21 @@ textarea.form-control{
     /* .services-section-block:hover img{
       transform: translateX(-60px) translateY(-23px);
     } */
+    .procedure .mobile-procedure{
+      display: unset;
+    }
+    .procedure .mobile-procedure .row{
+      display: flex;
+    }
+    .lines{
+      display: none;
+    }
+    #dot{
+      display: none;
+    }
+    .procedure .row{
+      display: none;
+    }
     .boxes {
       height: 550px;
     }
@@ -1690,7 +1762,7 @@ textarea.form-control{
       font-size: 20px;
     }
     .footerimgright img{
-      left: 42px;
+      left: 13px;
     }
     .hero-video-section{
       width: 112%;

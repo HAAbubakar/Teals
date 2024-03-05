@@ -46,6 +46,10 @@ if (isset($_SERVER['HTTPS'])) {
         font-family: Gilroy-Bold;
         src: url(assets/font/Gilroy/Gilroy-Bold.ttf);
       }
+      @font-face {
+        font-family: Gilroy-Extrabold;
+        src: url(assets/font/Gilroy/Gilroy-Extrabold.ttf);
+      }
     </style>
 
     <title>TEALS.Co</title>
